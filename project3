@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Assignment3
+{
+	public static void main(String []args)
+	{
+		System.out.print("Please enter lock combination (RddLddRdd): ");
+		Scanner stdIn = new Scanner(System.in);
+		String input = stdIn.nextLine(); 
+
+		int charLength = input.length();
+		if (charLength != 9){
+			System.out.println("is not a valid lock combination!"); 
+		}else{
+			
+		}
+			if (input.charAt(0) == 'R' && input.charAt(3) == 'L' && input.charAt(6)== 'R'){
+				
+			if (input.charAt(1) >= '0'&& input.charAt(1) <= '9')
+			{
+			
+				System.out.println("is a valid lock combination!");
+			}
+			else{
+				System.out.println("is not a valid lock combination!"); 
+			}
+			}
+			else {
+				System.out.println("is not a valid lock combination!"); 
+			}
+			
+			
+		}
+	}
